@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(89, 159, 234);
+    background-color: rgb(181, 215, 252);
 }
 
 main{
@@ -22,6 +22,7 @@ main{
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
+    font-size: 1.5rem;
 }
 .formulario_grupo-input{
     position: relative;
@@ -99,7 +100,21 @@ margin: 0px;
 .formulario_mensaje-exito-activo{
     display: block;
 }
-/* ///////////////////////////////////////////////////////Estilos para caso: Formulario correcto //////////////////////////////////////////////////*/
+
+/* ///////////////////////////////////////////////////////Estilos para: Validacion del formulario //////////////////////////////////////////////////*/
+.formulario_grupo-correcto .formulario_validacion-estado{
+    color: green;
+    opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario__label{
+    color: rgb(126, 0, 0);
+}
+
+.formulario_grupo-incorrecto .formulario_validacion-estado{
+    color: red;
+    opacity: 1 ;
+} 
 .formulario_grupo-incorrecto .formulario_input{
     border: 3px solid red
 }
